@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="New_anam_style.css">
+    <title>AnamCreations | Account Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="New_Anam_Project.html">
+          <img src="PicsArt_10-04-04.08.45.png" width="200px" alt="Error Occured!!">
+        </a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="New_Anam_Project.html">Home</a></li>
+            <li><a href="PRODUCT__page_anam.html">Products</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="anam_account_page.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="anam_cart.html">
+        <img src="img_cart_icon.png" width="30px" height="30px"  alt="">
+      </a>
+        <img src="WhatsApp Image 2020-10-10 at 15.17.51.jpg" alt="" class="menu-icon" onclick="menutoggle()">
+      </div>
+      </div>
+
+<div class="account-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img src="anam_side_pic_6.png" alt="">
+      </div>
+      <div class="col-2">
+        <div class="form-container">
+          <div class="form-btn">
+            <span onclick="login()">Login</span>
+            <span onclick="register()">Sign Up</span>
+            <hr id="Indicator">
+          </div>
+          <form id="LoginForm">
+            <input type="text" placeholder="Username">
+            <input type="Password" placeholder="Password">
+            <button type="submit" class="btn">Login</button>
+            <a href="">Forgot Password</a>
+          </form>
+          <form id="RegForm">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="Password" placeholder="Password">
+            <button type="submit" class="btn">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download our app</h3>
+        <p>Download App for Android and ios mobile</p>
+        <img src="anam_google_play.png" width="100px" alt="">
+        <img src="anam_appstore_logo.png" width="100px" alt="">
+      </div>
+      <div class="footer-col-2">
+        <img src="PicsArt_10-04-04.08.45.png" alt="">
+        <p>Our purpose is to spread happiness with emotions and memories to the customer and anam's of the customer</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
+      <div class="footer-col-3">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright &copy; 2020 - www.AnamCreations.com</p>
+  </div>
+</div>
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+      MenuItems.style.maxHeight = "200px";
+    }
+    else {
+      MenuItems.style.maxHeight = "0px";
+    } onclick=""
+  }
+</script>
+
+
+<script>
+  var LoginForm = document.getElementById("LoginForm");
+  var RegForm = document.getElementById("RegForm");
+  var Indicator = document.getElementById("Indicator");
+
+  function register(){
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+  }
+  function login(){
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+  }
+</script>
+
+
+
+
+
+  </body>
+</html>
